@@ -1,0 +1,394 @@
+/* Fuentes */
+@font-face {
+    font-family: "Typeecon";
+    src: url(../fonts/typeecon.otf);
+}
+
+/* Body */
+body {
+	background: linear-gradient(to right,  #CFCFCF, #FFF 15%, #FFF 70%, #CFCFCF);
+	color: #fff;
+	font-family: "Roboto";  
+}
+
+/* Navegación */
+nav {
+	display: block;
+	background-color: rgb(0, 0, 0, 0);
+	min-width: 100%;
+	position: fixed;
+	z-index: 999;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+}
+
+/* Ocultar menú hamburguesa */
+.menuBar {
+	display: none;
+}
+
+.navbar {
+	min-width: 80%;
+	max-width: 80%;
+	width: 80%;
+	padding: 2.5%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.navbar > li {
+	display: inline;
+	margin: 0 2.5%;
+}
+.navbar > li > a:link, .navbar > li > a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
+.navbar > li > a:hover{
+	color: #09C;
+	text-decoration: none;
+}
+.navbar > li > a:active{
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Sección: Home */
+.home {
+	max-width: 100%;
+	height: auto;
+	background-image: url(../img/background.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+/* Logo */
+.logo-principal {	
+	width: 18%;
+	margin-top: 15%;
+	margin-bottom: 4%;
+}
+
+/* Iconos */
+.icon {
+	margin-left: 2%;
+	margin-right: 0.5%;
+	font-family: "Typeecon";
+	font-size: 14px;
+}
+
+/* Relleno inferior entre horario y contacto */
+.home div {
+	padding-bottom: 2%;
+}
+
+/* Muestra alineado en línea los iconos con el texto (párrafo) */
+.home div > p {
+	display: inline;
+}
+
+/* Contenedor - Aseguradoras*/
+.aseguradoras {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.aseguradoras > span {
+	margin-right: 1%;
+    margin-left: 2%;
+}
+
+/* Tamaño imagenes de las aseguradoras */
+a > img {
+	width: 70%;
+}
+
+/* Margen superior - Asistencia en viaje */
+.grua {
+	margin-top: 3%;
+}
+
+/* Imagen grua */
+.grua > img {
+	width: 50px;
+    padding-right: 0.5%;
+}
+
+/* Sección: Identidad */
+.identidad {
+	display: flex;
+}
+
+/* Quienes somos */
+.weAre {
+	width: 50%;
+	/* height: 120vh; -> Rompe todo <- */
+	height: auto;
+}
+
+/* Icono - Quienes somos */
+.weAre > img {
+	width: 12%;
+	margin-left: 10%;
+	margin-top: 20%;
+}
+
+/* Encabezados */
+.weAre > h1 {
+	margin-left: 10%;
+	margin-top: 3%;
+}
+
+/* Párrafo */
+.weAre > p {
+	margin-left: 10%;
+	margin-top: 3%;
+	text-align: left;
+	padding-right: 8%;
+}
+
+/* Imagenes de las aseguradoras */
+.container-imgs > img {
+	width: 30%;
+	margin-top: 3%;
+	margin-left: 8%;
+	margin-right: -8%;
+}
+
+/* Ubicación */
+.ubication {
+	width: 50%;
+	flex: 1;
+	vertical-align: middle;
+	padding: 0;
+}
+
+/* Icono - Ubicación */
+.ubication > img {
+	width: 12%;
+	margin-top: 20%;
+	margin-left: 5%;
+}
+
+/* Mapa */
+.map {
+	width: 88%;
+    height: 51.5%;
+    border: 0;
+    margin-left: 5%;
+    margin-top: 4%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1280px){
+	
+	.weAre {
+		/* height: 106vh; -> Rompe todo <- */
+		height: auto; 
+	}
+}	
+
+@media screen and (max-width: 910px){
+	
+	/* Hacer que aparezca barra con menú hamburguesa */
+	.menuBar {
+		display: block;
+		min-width: 100%;
+		background: rgba(4, 132, 159, 0.9);
+		padding: 2% 1%;
+		border-bottom: 1px solid #0F5C72;
+	}
+
+
+	.logo-principal {
+	 	margin-top: 20%;
+	 	width: 34%;
+	}
+	
+	.icon {
+    	margin-left: 2%;
+    	margin-right: 0.5%;
+	}
+
+	.grua > img {
+		width: 50px;
+   	 	padding-top: 2%;
+	}
+	
+	.identidad {
+		display: flex;
+	}
+
+	.weAre {
+    	padding-top: 5%;
+    	width: 50%;
+    	height: auto;
+	}
+
+	/* .container-imgs > img {
+    	width: 30%;
+    	margin-top: 3%;
+		margin-left: 8%;
+		margin-right: -8%;
+	}
+	*/
+	.ubication > img {
+		margin-left: 7%;
+		margin-top: 30%;
+	}
+
+	.ubication {
+		width: 50%;
+		float: unset;
+		text-align: left;
+	}	
+
+	.map {
+		margin-left: 7%;
+		margin-right: 0;
+	}	
+}
+
+@media screen and (max-width: 768px){
+	
+	.identidad {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.weAre {
+		width: auto;
+		height: auto;
+	}
+	
+	.weAre > p {
+		margin-bottom: 7%;
+	}
+
+	.weAre > h1 {
+		margin-top: 3%;
+    	margin-left: unset;
+    	text-align: center;
+	}
+
+	.weAre > img {
+		display: block;
+    	margin-top: 10%;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	
+	.map {
+    	height: 80vh;
+    	max-height: 50vh;
+    	min-height: 40vh;
+	}
+
+	.container-imgs {
+		display: inline-flex;
+		margin-top: 3%;		
+	}
+
+	.container-imgs > img {
+		margin-top: unset;
+		margin-left: auto;
+		margin-right: auto;
+		height: 10%;
+	}
+
+	.ubication {
+		width: auto;
+		height: auto;
+		padding-top: 1%;
+		padding-bottom: 10%;
+	}
+
+	.ubication > img {
+		display: block;
+		margin-top: 10%;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.map {
+    	max-height: 80vh;
+	}
+}	
+
+@media screen and (max-width: 620px){
+	
+	.icon {
+		margin-left: unset;
+	}
+
+	.home div > p {
+		display: block;
+		margin-top: 3%;
+	}
+	
+	/* Permite ver la imagen de la grua y el texto en linea */
+	#text-grua {
+		display: inline;
+	}
+
+	.container-imgs {
+		display: inline-flex;
+	}
+
+	.map {
+    	max-height: 60vh;
+	}
+}	
+
+@media screen and (max-width: 500px){
+	
+	.container-imgs {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 8%;
+	}
+
+	.container-imgs > img {
+		width: 50%;
+		display: block;
+	}
+	
+	.weAre > img {
+		width: 15%;
+	}
+
+	.ubication > img {
+		width: 15%;
+	}
+
+	.map {
+    	max-height: 45vh;
+	}
+}
+
+@media screen and (max-width: 320px){
+	
+
+	.logo-principal {
+		margin-bottom: 4%;
+	}
+
+	/* Muestra alineado en bloque los iconos con el párrafo */
+	.home div > p {
+		display: block;
+	}
+
+	.icon {
+		margin-left: unset;
+	}
+}
